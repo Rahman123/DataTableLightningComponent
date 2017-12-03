@@ -1,0 +1,60 @@
+<!--
+ - Created by chshah on 12/2/2017.
+ -->
+
+<aura:component description="AccountContactsViewer" controller="AccountContactsViewerController" implements="force:lightningQuickAction, force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId, flexipage:availableForRecordHome, forceCommunity:availableForAllPageTypes" access="global">
+
+    <!-- global configuration attributes -->
+
+    <!-- local (private to component) attributes -->
+    <aura:attribute name="allowedColumns" default="" type="String" description="Columns to Display (Comma Separated)"/>
+    <aura:attribute name="displayLightning" default="true" type="Boolean" description="Display Lightning User Interface Flag"/>
+    <aura:attribute name="displayCustom" default="true" type="Boolean" description="Display Custom User Interface Flag"/>
+    <aura:attribute name="displayError" default="false" type="Boolean" description="Display Error Message Flag"/>
+    <aura:attribute name="errorMessage" default="" type="Boolean" description="Actual Error Message"/>
+    <aura:attribute name="recordId" type="Id" description="Record Id of the Page"/>
+    <aura:attribute name="Account" type="Account" description="Holds Account value from the Lightning Data Service"/>
+    <aura:attribute name="Contacts" type="Contact" description="Holds Contacts from the Server Side controller"/>
+    <aura:attribute name="Columns" type="List" default=""  description="holds Column list from Server side controller"/>
+    <aura:attribute name="version1" type="String" default="2"/>
+    <aura:attribute name="version2" type="String" default="0"/>
+    <aura:attribute name="version3" type="String" default="0"/>
+
+    <!-- handlers -->
+    <aura:handler name="init" value="{!this}" action="{!c.initialization}" />
+
+    <!-- force record data : lightning data service , hope we can get child record one day -->
+    <force:recordData aura:id="accountRecord" recordId="{!v.recordId}" targetFields="{!v.Account}"  layoutType="FULL"/>
+
+    <lightning:card iconName="standard:contact" title="{! 'Contact List for ' + v.Account.Name }">
+
+        <lightning:formattedText value="{!v.version1}"/>.<lightning:formattedText value="{!v.version2}"/>.<lightning:formattedText value="{!v.version3}"/>
+
+        <aura:if isTrue="{!v.displayLightning}">
+            <div class="lightningUIContainer">
+                <lightning:layout>
+                    <lightning:datatable data="{!v.Contacts}" columns="{!v.Columns}" hideCheckboxColumn="true"/>
+                </lightning:layout>
+            </div>
+        </aura:if>
+
+        <aura:if isTrue="{!v.displayCustom}">
+            <div class="customUIContainer">
+
+            </div>
+        </aura:if>
+
+        <aura:if isTrue="{!v.displayError}">
+            <div class="errorContainer">
+                <div class="errorContainerHeader">
+                    Error
+                </div>
+                <div class="errorContainerDetail">
+                        {!v.errorMessage}
+                </div>
+            </div>
+        </aura:if>
+
+    </lightning:card>
+
+</aura:component>
