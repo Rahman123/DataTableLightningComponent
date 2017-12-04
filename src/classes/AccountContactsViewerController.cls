@@ -5,18 +5,20 @@
 public without sharing class AccountContactsViewerController {
     @AuraEnabled
     public static List<Contact> getContacts(Id recordId) {
-        return [Select Id, FirstName, LastName, Email, Phone From Contact Where AccountId = :recordId];
+        System.debug(' recordId ' + recordId );
+        String query = 'select ' + AccountContactsViewerComponent__c.getInstance('default').allowedColumns__c + ' from Contact Where AccountId = :recordId ';
+        return Database.query(query);
     }
 
     @AuraEnabled
-    public static Configuration getConfiguration() {
+    public static String getConfiguration() {
         Configuration configuration = new Configuration();
         AccountContactsViewerComponent__c defaultOption = AccountContactsViewerComponent__c.getInstance('default');
         configuration.displayCustom = defaultOption.displayCustom__c;
         configuration.displayLightning = defaultOption.displayLightning__c;
-        configuration.allowedColumns = defaultOption.allowedColumns__c;
+        configuration.allowedColumns = defaultOption.allowedColumns__c.split(',');
         configuration.columns = new List<Column>();
-        for(String fieldName : configuration.allowedColumns.split(',') ) {
+        for(String fieldName : configuration.allowedColumns ) {
             Column column = new Column();
             column.value = fieldName;
             column.fieldName = fieldName;
@@ -26,13 +28,13 @@ public without sharing class AccountContactsViewerController {
             configuration.columns.add(column);
         }
         System.debug( ' configuration ' + configuration);
-        return configuration;
+        return JSON.serialize( configuration );
     }
 
     public class Configuration {
         Boolean displayCustom;
         Boolean displayLightning;
-        String allowedColumns;
+        List<String> allowedColumns;
         List<Column> columns;
     }
 

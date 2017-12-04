@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>allowedColumns__c</fullName>
+        <description>Allowed Columns CSV</description>
+        <externalId>false</externalId>
+        <label>Allowed Columns</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>displayCustom__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Display Custom Interface</description>
+        <externalId>false</externalId>
+        <label>Display Custom Interface</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>displayLightning__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Display Lightning Interface</description>
+        <externalId>false</externalId>
+        <label>Display Lightning Interface</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Account Contacts Viewer Component</label>
+    <visibility>Public</visibility>
+</CustomObject>

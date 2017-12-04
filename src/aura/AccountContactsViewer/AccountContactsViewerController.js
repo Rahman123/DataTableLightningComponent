@@ -60,10 +60,16 @@
         configurationAction.setCallback(this, function(data) {
             var state = data.getState();
             console.log( ' AccountContactsViewerController configurationAction callback - state ' + state );
-            console.log( data );
             if (state === "SUCCESS") {
-                console.log( data.getReturnValue(). );
-                component.set("v.AllColumns", data.getReturnValue().columns );
+                var response = JSON.parse( data.getReturnValue() );
+                console.log( ' response.displayCustom ' + response.displayCustom + ' response.displayLightning ' + response.displayLightning + ' response.allowedColumns ' + ' response.columns ' );
+                console.log( response.allowedColumns );
+                console.log( response.columns );
+                component.set("v.displayCustom", response.displayCustom );
+                component.set("v.displayLightning", response.displayLightning );
+                component.set("v.SelectedColumns", response.allowedColumns );
+                component.set("v.AllColumns", response.columns );
+                component.set("v.Columns", response.columns );
             } else if (state === "ERROR") {
                 component.set("v.displayError", true );
                 var errors = response.getError();
@@ -94,7 +100,10 @@
         var AllColumns = component.get('v.AllColumns');
         var Columns = component.get('v.Columns');
         var Contacts = component.get("v.Contacts");
-        console.log(' AccountContactsViewerController SelectedColumns PRE: ' + SelectedColumns + ' AllColumns ' + AllColumns + ' Columns ' + Columns );
+        console.log(' AccountContactsViewerController SelectedColumns PRE: SelectedColumns AllColumns  Columns ' );
+        console.log( SelectedColumns );
+        console.log( AllColumns);
+        console.log( Columns );
         Columns = [];
         SelectedColumns.forEach(function(selectedColumn) {
             AllColumns.forEach(function(allColumn) {
@@ -105,7 +114,10 @@
         });
         component.set("v.Columns", Columns);
         component.set("v.Contacts", Contacts);
-        console.log(' AccountContactsViewerController SelectedColumns POST : ' + SelectedColumns + ' AllColumns ' + AllColumns + ' Columns ' + Columns );
+        console.log(' AccountContactsViewerController SelectedColumns POST: SelectedColumns AllColumns  Columns ' );
+        console.log( SelectedColumns );
+        console.log( AllColumns);
+        console.log( Columns );
     },
 
     sortContacts: function (component, event, helper) {

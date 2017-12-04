@@ -2,13 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5c5ffd8-282a-4c42-88b8-395bf42ede10" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/aura/AccountContactsViewerOutApplication/AccountContactsViewerOutApplication.app" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/aura/AccountContactsViewerOutApplication/AccountContactsViewerOutApplication.app-meta.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/AccountContactViewer.page" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/AccountContactViewer.page-meta.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kugamon.test.iml" afterPath="$PROJECT_DIR$/kugamon.test.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/aura/AccountContactsViewer/AccountContactsViewer.cmp" afterPath="$PROJECT_DIR$/src/aura/AccountContactsViewer/AccountContactsViewer.cmp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/aura/AccountContactsViewer/AccountContactsViewer.cmp-meta.xml" afterPath="$PROJECT_DIR$/src/aura/AccountContactsViewer/AccountContactsViewer.cmp-meta.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/aura/AccountContactsViewer/AccountContactsViewer.css" afterPath="$PROJECT_DIR$/src/aura/AccountContactsViewer/AccountContactsViewer.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/aura/AccountContactsViewer/AccountContactsViewer.design" afterPath="$PROJECT_DIR$/src/aura/AccountContactsViewer/AccountContactsViewer.design" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/aura/AccountContactsViewer/AccountContactsViewerController.js" afterPath="$PROJECT_DIR$/src/aura/AccountContactsViewer/AccountContactsViewerController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/aura/AccountContactsViewer/AccountContactsViewerHelper.js" afterPath="$PROJECT_DIR$/src/aura/AccountContactsViewer/AccountContactsViewerHelper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/aura/DynamicObjectField/DynamicObjectField.cmp" afterPath="$PROJECT_DIR$/src/aura/DynamicObjectField/DynamicObjectField.cmp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/aura/DynamicObjectField/DynamicObjectField.cmp-meta.xml" afterPath="$PROJECT_DIR$/src/aura/DynamicObjectField/DynamicObjectField.cmp-meta.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/aura/DynamicObjectField/DynamicObjectFieldController.js" afterPath="$PROJECT_DIR$/src/aura/DynamicObjectField/DynamicObjectFieldController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/classes/AccountContactsViewerController.cls" afterPath="$PROJECT_DIR$/src/classes/AccountContactsViewerController.cls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/classes/AccountContactsViewerController.cls-meta.xml" afterPath="$PROJECT_DIR$/src/classes/AccountContactsViewerController.cls-meta.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,18 +33,52 @@
       <file leaf-file-name="AccountContactsViewer.cmp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/aura/AccountContactsViewer/AccountContactsViewer.cmp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="204">
+              <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+              <folding>
+                <marker date="1512427814766" expanded="true" signature="4083:4364" ph="..." />
+                <marker date="1512427814766" expanded="true" signature="4083:4383" ph="..." />
+                <marker date="1512427814766" expanded="true" signature="4083:4402" ph="..." />
+                <marker date="1512427814766" expanded="true" signature="4083:5932" ph="..." />
+                <marker date="1512427814766" expanded="true" signature="4195:4328" ph="..." />
+                <marker date="1512427814766" expanded="true" signature="4447:4517" ph="..." />
+                <marker date="1512427814766" expanded="true" signature="4564:5572" ph="..." />
+                <marker date="1512427814766" expanded="true" signature="4608:5553" ph="..." />
+                <marker date="1512427814766" expanded="true" signature="4688:5533" ph="..." />
+                <marker date="1512427814766" expanded="true" signature="4716:4988" ph="..." />
+                <marker date="1512427814766" expanded="true" signature="4745:4959" ph="..." />
+                <marker date="1512427814766" expanded="true" signature="4824:4929" ph="..." />
+                <marker date="1512427814766" expanded="true" signature="5016:5508" ph="..." />
+                <marker date="1512427814766" expanded="true" signature="5093:5479" ph="..." />
+                <marker date="1512427814766" expanded="true" signature="5126:5437" ph="..." />
+                <marker date="1512427814766" expanded="true" signature="5234:5403" ph="..." />
+                <marker date="1512427814766" expanded="true" signature="5618:5909" ph="..." />
+                <marker date="1512427814766" expanded="true" signature="5659:5890" ph="..." />
+                <marker date="1512427814766" expanded="true" signature="5710:5759" ph="..." />
+                <marker date="1512427814766" expanded="true" signature="5810:5871" ph="..." />
+                <marker date="1512427814766" expanded="true" signature="5945:6176" ph="..." />
+                <marker date="1512427814766" expanded="true" signature="5978:6063" ph="{...}" />
+                <marker date="1512427814766" expanded="true" signature="6112:6164" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DynamicObjectField.cmp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/aura/DynamicObjectField/DynamicObjectField.cmp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="74" lean-forward="false" selection-start-line="4" selection-start-column="74" selection-end-line="4" selection-end-column="74" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AccountContactsViewerController.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AccountContactsViewerController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/aura/AccountContactsViewer/AccountContactsViewerController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="64" column="51" lean-forward="false" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
+            <state relative-caret-position="510">
+              <caret line="30" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -43,12 +87,32 @@
       <file leaf-file-name="AccountContactsViewerController.cls" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/classes/AccountContactsViewerController.cls">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="27" column="57" lean-forward="false" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
+            <state relative-caret-position="119">
+              <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="e#797#805#0" expanded="true" />
+                <element signature="e#941#949#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccountContactViewer.page" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pages/AccountContactViewer.page">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="45" lean-forward="false" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccountContactsViewerOutApplication.app" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/aura/AccountContactsViewerOutApplication/AccountContactsViewerOutApplication.app">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="66" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="66" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -77,7 +141,7 @@
         <entry file="file://$PROJECT_DIR$/src/aura/AccountContactsViewer/AccountContactsViewer.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
-              <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+              <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -93,8 +157,10 @@
         <option value="Apex Class" />
         <option value="Lightning Helper" />
         <option value="Lightning Component" />
-        <option value="Apex Metadata" />
         <option value="Lightning Controller" />
+        <option value="Visualforce Page" />
+        <option value="Lightning Application" />
+        <option value="Apex Metadata" />
       </list>
     </option>
   </component>
@@ -113,6 +179,7 @@
       <find>handleColumnSelection</find>
       <find>Contacts</find>
       <find>displayColumnSelector</find>
+      <find>displayCustom</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -132,9 +199,12 @@
         <option value="$PROJECT_DIR$/src/aura/DynamicObjectField/DynamicObjectFieldController.js" />
         <option value="$PROJECT_DIR$/src/aura/AccountContactsViewer/AccountContactsViewerHelper.js" />
         <option value="$PROJECT_DIR$/src/aura/AccountContactsViewer/AccountContactsViewer.css" />
-        <option value="$PROJECT_DIR$/src/aura/AccountContactsViewer/AccountContactsViewer.cmp" />
-        <option value="$PROJECT_DIR$/src/classes/AccountContactsViewerController.cls" />
         <option value="$PROJECT_DIR$/src/aura/AccountContactsViewer/AccountContactsViewerController.js" />
+        <option value="$PROJECT_DIR$/src/aura/AccountContactViewerOut/AccountContactViewerOut.app" />
+        <option value="$PROJECT_DIR$/src/classes/AccountContactsViewerController.cls" />
+        <option value="$PROJECT_DIR$/src/aura/AccountContactsViewerOutApplication/AccountContactsViewerOutApplication.app" />
+        <option value="$PROJECT_DIR$/src/aura/AccountContactsViewer/AccountContactsViewer.cmp" />
+        <option value="$PROJECT_DIR$/src/pages/AccountContactViewer.page" />
       </list>
     </option>
   </component>
@@ -144,7 +214,8 @@
         <entry key="kugamon.test">
           <value>
             <ModuleWorkspaceSettings>
-              <option name="moduleContentsLastModified" value="1512346006684" />
+              <option name="moduleContentsLastModified" value="1512427884079" />
+              <option name="serverMetadataLastPopulated" value="1512427865006" />
             </ModuleWorkspaceSettings>
           </value>
         </entry>
@@ -165,9 +236,11 @@
                 <ConnectionWorkspaceSettings>
                   <option name="buildSuccessDatesBySourceRootRelativePath">
                     <map>
-                      <entry key="AURA/ACCOUNTCONTACTSVIEWER" value="1512417713000" />
+                      <entry key="AURA/ACCOUNTCONTACTSVIEWER" value="1512426996057" />
+                      <entry key="AURA/ACCOUNTCONTACTSVIEWEROUTAPPLICATION" value="1512426370000" />
                       <entry key="AURA/DYNAMICOBJECTFIELD" value="1512366228569" />
-                      <entry key="CLASSES/ACCOUNTCONTACTSVIEWERCONTROLLER.CLS" value="1512417429767" />
+                      <entry key="CLASSES/ACCOUNTCONTACTSVIEWERCONTROLLER.CLS" value="1512425882439" />
+                      <entry key="PAGES/ACCOUNTCONTACTVIEWER.PAGE" value="1512427826506" />
                     </map>
                   </option>
                   <option name="lastBuildScope" value="CONTEXT" />
@@ -179,6 +252,16 @@
                             <option name="showLocalAndServer" value="true" />
                             <option name="showLocalOnly" value="true" />
                             <option name="showServerOnly" value="false" />
+                            <option name="showSubscribedOnly" value="true" />
+                          </BuildViewToggles>
+                        </value>
+                      </entry>
+                      <entry key="RETRIEVE">
+                        <value>
+                          <BuildViewToggles>
+                            <option name="showLocalAndServer" value="true" />
+                            <option name="showLocalOnly" value="false" />
+                            <option name="showServerOnly" value="true" />
                             <option name="showSubscribedOnly" value="true" />
                           </BuildViewToggles>
                         </value>
@@ -195,7 +278,7 @@
             <entry key="kugamon.test">
               <value>
                 <MetadataContents>
-                  <option name="lastPopulated" value="1512275055681" />
+                  <option name="lastPopulated" value="1512426343064" />
                   <option name="metadataTypes">
                     <set>
                       <MetadataType>
@@ -205,6 +288,14 @@
                           </set>
                         </option>
                         <option name="name" value="ApexClass" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
+                            <option value="AccountContactViewer" />
+                          </set>
+                        </option>
+                        <option name="name" value="ApexPage" />
                       </MetadataType>
                       <MetadataType>
                         <option name="members">
@@ -237,7 +328,8 @@
                         <option name="members">
                           <set>
                             <option value="AccountContactsViewer" />
-                            <option value="AccountContactsViewerModal" />
+                            <option value="AccountContactsViewerOutApplication" />
+                            <option value="DynamicObjectField" />
                           </set>
                         </option>
                         <option name="name" value="AuraDefinitionBundle" />
@@ -865,6 +957,16 @@
                       <MetadataType>
                         <option name="members">
                           <set>
+                            <option value="DataTables" />
+                            <option value="TableSorter" />
+                            <option value="jQuery" />
+                          </set>
+                        </option>
+                        <option name="name" value="StaticResource" />
+                      </MetadataType>
+                      <MetadataType>
+                        <option name="members">
+                          <set>
                             <option value="Account" />
                             <option value="Asset" />
                             <option value="Campaign" />
@@ -886,6 +988,7 @@
                         <option name="members">
                           <set>
                             <option value="Account.Billing" />
+                            <option value="Account.ContactsV" />
                             <option value="Campaign.ViewCampaignInfluenceReport" />
                             <option value="Case.UpsellCrosssellOpportunity" />
                             <option value="Opportunity.DeliveryStatus" />
@@ -900,6 +1003,7 @@
             </entry>
           </map>
         </option>
+        <option name="retrieveAndMergeDefault" value="false" />
       </ProjectWorkspaceSettings>
     </option>
   </component>
@@ -964,6 +1068,13 @@
               <item name="kugamon.test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="aura" type="462c0819:PsiDirectoryNode" />
+              <item name="AccountContactsViewerOutApplication" type="edc2aaaf:IlluminatedCloudProjectTreeStructureProvider$BundleDirectoryNode" />
+            </path>
+            <path>
+              <item name="kugamon.test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kugamon.test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="aura" type="462c0819:PsiDirectoryNode" />
               <item name="DynamicObjectField" type="edc2aaaf:IlluminatedCloudProjectTreeStructureProvider$BundleDirectoryNode" />
             </path>
             <path>
@@ -971,6 +1082,12 @@
               <item name="kugamon.test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kugamon.test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kugamon.test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1097,12 +1214,12 @@
       <updated>1512254748490</updated>
       <workItem from="1512254749729" duration="308000" />
       <workItem from="1512255065579" duration="34862000" />
-      <workItem from="1512368687214" duration="19155000" />
+      <workItem from="1512368687214" duration="26659000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54325000" />
+    <option name="totallyTimeSpent" value="61829000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1015" extended-state="6" />
@@ -1125,8 +1242,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.276644" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18017058" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.276644" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18017058" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="SOQL Query" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Log Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1155,7 +1272,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1512427814766" expanded="true" signature="4083:4364" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="4083:4383" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="4083:4402" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="4083:5932" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="4195:4328" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="4447:4517" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="4564:5572" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="4608:5553" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="4688:5533" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="4716:4988" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="4745:4959" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="4824:4929" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="5016:5508" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="5093:5479" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="5126:5437" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="5234:5403" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="5618:5909" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="5659:5890" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="5710:5759" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="5810:5871" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="5945:6176" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="5978:6063" ph="{...}" />
+            <marker date="1512427814766" expanded="true" signature="6112:6164" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1234,26 +1375,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/aura/AccountContactsViewerModal/AccountContactsViewerModal.cmp" />
-    <entry file="file://$PROJECT_DIR$/src/aura/DynamicObjectField/DynamicObjectField.cmp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="74" lean-forward="false" selection-start-line="4" selection-start-column="74" selection-end-line="4" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/aura/DynamicObjectField/DynamicObjectFieldController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/aura/AccountContactsViewer/AccountContactsViewer.design">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1269,34 +1394,98 @@
     <entry file="file://$PROJECT_DIR$/src/aura/AccountContactsViewer/AccountContactsViewer.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
-          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/classes/AccountContactsViewerController.cls">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="27" column="57" lean-forward="false" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
+        <state relative-caret-position="119">
+          <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#797#805#0" expanded="true" />
+            <element signature="e#941#949#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/aura/AccountContactsViewer/AccountContactsViewer.cmp">
+    <entry file="file://$PROJECT_DIR$/src/aura/AccountContactViewerOut/AccountContactViewerOut.app">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="5" column="53" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/aura/AccountContactsViewer/AccountContactsViewerController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="64" column="51" lean-forward="false" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
+        <state relative-caret-position="510">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aura/AccountContactsViewer/AccountContactsViewer.design">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aura/AccountContactsViewer/AccountContactsViewer.cmp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+          <folding>
+            <marker date="1512427814766" expanded="true" signature="4083:4364" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="4083:4383" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="4083:4402" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="4083:5932" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="4195:4328" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="4447:4517" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="4564:5572" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="4608:5553" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="4688:5533" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="4716:4988" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="4745:4959" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="4824:4929" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="5016:5508" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="5093:5479" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="5126:5437" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="5234:5403" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="5618:5909" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="5659:5890" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="5710:5759" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="5810:5871" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="5945:6176" ph="..." />
+            <marker date="1512427814766" expanded="true" signature="5978:6063" ph="{...}" />
+            <marker date="1512427814766" expanded="true" signature="6112:6164" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aura/AccountContactsViewerOutApplication/AccountContactsViewerOutApplication.app">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="66" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aura/DynamicObjectField/DynamicObjectField.cmp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="74" lean-forward="false" selection-start-line="4" selection-start-column="74" selection-end-line="4" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/AccountContactViewer.page">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="45" lean-forward="false" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
           <folding />
         </state>
       </provider>

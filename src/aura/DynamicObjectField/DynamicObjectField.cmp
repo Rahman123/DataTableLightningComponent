@@ -2,7 +2,7 @@
  - Created by chshah on 12/3/2017.
  -->
 
-<aura:component description="DynamicObjectField" implements="force:lightningQuickAction, force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId, flexipage:availableForRecordHome, forceCommunity:availableForAllPageTypes" access="global">
+<aura:component description="DynamicObjectField" implements="force:lightningQuickAction,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,flexipage:availableForRecordHome,forceCommunity:availableForAllPageTypes" access="global">
     <aura:attribute name="Object" type="sObject" default=""/>
     <aura:attribute name="Field" type="String" default=""/>
     <aura:attribute name="ObjectFieldValue" type="String" default=""/>

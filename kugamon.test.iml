@@ -35,6 +35,14 @@
                       <option name="name" value="ApexComponent" />
                     </MetadataType>
                     <MetadataType>
+                      <option name="entries">
+                        <list>
+                          <MetadataEntry>
+                            <option name="name" value="AccountContactViewer" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                        </list>
+                      </option>
                       <option name="name" value="ApexPage" />
                     </MetadataType>
                     <MetadataType>
@@ -102,7 +110,7 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="AccountContactsViewerModal" />
+                            <option name="name" value="AccountContactsViewerOutApplication" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -148,6 +156,13 @@
                       <option name="wildcard" value="false" />
                     </MetadataType>
                     <MetadataType>
+                      <option name="entries">
+                        <list>
+                          <MetadataEntry>
+                            <option name="name" value="SelfSignedCert_03Dec2017_040605" />
+                          </MetadataEntry>
+                        </list>
+                      </option>
                       <option name="name" value="Certificate" />
                       <option name="wildcard" value="false" />
                     </MetadataType>
@@ -182,6 +197,13 @@
                       <option name="wildcard" value="false" />
                     </MetadataType>
                     <MetadataType>
+                      <option name="entries">
+                        <list>
+                          <MetadataEntry>
+                            <option name="name" value="Account.Custom_Account_Compact_Layout" />
+                          </MetadataEntry>
+                        </list>
+                      </option>
                       <option name="name" value="CompactLayout" />
                       <option name="wildcard" value="false" />
                     </MetadataType>
@@ -281,6 +303,15 @@
                             <option name="name" value="Account.UpsellOpportunity__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="AccountContactsViewerComponent__c.allowedColumns__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="AccountContactsViewerComponent__c.displayCustom__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="AccountContactsViewerComponent__c.displayLightning__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Case.EngineeringReqNumber__c" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -369,6 +400,10 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="AccountContactRole" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="AccountContactsViewerComponent__c" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Activity" />
@@ -520,6 +555,13 @@
                       <option name="wildcard" value="false" />
                     </MetadataType>
                     <MetadataType>
+                      <option name="entries">
+                        <list>
+                          <MetadataEntry>
+                            <option name="name" value="AccountContactsViewerComponent__c-en_US" />
+                          </MetadataEntry>
+                        </list>
+                      </option>
                       <option name="name" value="CustomObjectTranslation" />
                       <option name="wildcard" value="false" />
                     </MetadataType>
@@ -693,6 +735,9 @@
                     <MetadataType>
                       <option name="entries">
                         <list>
+                          <MetadataEntry>
+                            <option name="name" value="Account_Record_Page" />
+                          </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="LightningSalesConsole_UtilityBar" />
                           </MetadataEntry>
@@ -1276,6 +1321,9 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
+                            <option name="name" value="Account.Contacts" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Case.LogACall" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1570,6 +1618,9 @@
                             <option name="name" value="Account" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="AccountContactsViewerComponent__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Asset" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1784,6 +1835,22 @@
                       <option name="wildcard" value="false" />
                     </MetadataType>
                     <MetadataType>
+                      <option name="entries">
+                        <list>
+                          <MetadataEntry>
+                            <option name="name" value="DataTables" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="TableSorter" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="jQuery" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                        </list>
+                      </option>
                       <option name="name" value="StaticResource" />
                     </MetadataType>
                     <MetadataType>
@@ -1850,6 +1917,9 @@
                         <list>
                           <MetadataEntry>
                             <option name="name" value="Account.Billing" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Account.ContactsV" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Campaign.ViewCampaignInfluenceReport" />

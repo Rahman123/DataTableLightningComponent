@@ -2,16 +2,16 @@
  - Created by chshah on 12/2/2017.
  -->
 
-<aura:component description="AccountContactsViewer" controller="AccountContactsViewerController" implements="force:lightningQuickAction, force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId, flexipage:availableForRecordHome, forceCommunity:availableForAllPageTypes" access="global">
+<aura:component description="AccountContactsViewer" controller="AccountContactsViewerController" implements="force:lightningQuickAction,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,flexipage:availableForRecordHome,forceCommunity:availableForAllPageTypes" access="global">
 
     <!-- global configuration attributes -->
 
     <!-- local (private to component) attributes -->
     <aura:attribute name="allowedColumns" default="" type="String" description="Columns to Display (Comma Separated)"/>
-    <aura:attribute name="displayLightning" default="true" type="Boolean" description="Display Lightning User Interface Flag"/>
-    <aura:attribute name="displayCustom" default="true" type="Boolean" description="Display Custom User Interface Flag"/>
+    <aura:attribute name="displayLightning" default="false" type="Boolean" description="Display Lightning User Interface Flag"/>
+    <aura:attribute name="displayCustom" default="false" type="Boolean" description="Display Custom User Interface Flag"/>
     <aura:attribute name="displayError" default="false" type="Boolean" description="Display Error Message Flag"/>
-    <aura:attribute name="displayBoth" default="true" type="Boolean" description="Display both Lightning and Custom"/>
+    <aura:attribute name="displayBoth" default="false" type="Boolean" description="Display both Lightning and Custom"/>
     <aura:attribute name="errorMessage" default="" type="Boolean" description="Actual Error Message"/>
     <aura:attribute name="recordId" type="Id" description="Record Id of the Page"/>
     <aura:attribute name="Account" type="Account" description="Holds Account value from the Lightning Data Service"/>
@@ -30,16 +30,19 @@
     <force:recordData aura:id="accountRecord" recordId="{!v.recordId}" targetFields="{!v.Account}"  layoutType="FULL"/>
 
     <!-- data table -->
+    <aura:if isTrue="{!v.displayCustom}">
 
-    <ltng:require styles= "{! $Resource.DataTables + '/datatables.css'}"/>
-    <ltng:require styles= "{! $Resource.DataTables + '/DataTables-1.10.16/css/jquery.dataTables.css' }"/>
-    <ltng:require styles= "{! $Resource.DataTables + '/DataTables-1.10.16/css/dataTables.jqueryui.css' }"/>
+        <ltng:require styles="{! $Resource.DataTables + '/datatables.css'}"/>
+        <ltng:require styles="{! $Resource.DataTables + '/DataTables-1.10.16/css/jquery.dataTables.css' }"/>
+        <ltng:require styles="{! $Resource.DataTables + '/DataTables-1.10.16/css/dataTables.jqueryui.css' }"/>
 
-    <ltng:require scripts="{! $Resource.jQuery }"/>
-    <ltng:require scripts="{! $Resource.DataTables + '/datatables.js' }"/>
-    <ltng:require scripts="{! $Resource.DataTables + '/DataTables-1.10.16/js/jquery.dataTables.js'}"/>
-    <ltng:require scripts="{! $Resource.DataTables + '/Buttons-1.4.2/js/buttons.colVis.js'}"/>
-    <ltng:require scripts="{! $Resource.DataTables + '/Buttons-1.4.2/js/dataTables.buttons.js'}"/>
+        <ltng:require scripts="{! $Resource.jQuery }"/>
+        <ltng:require scripts="{! $Resource.DataTables + '/datatables.js' }"/>
+        <ltng:require scripts="{! $Resource.DataTables + '/DataTables-1.10.16/js/jquery.dataTables.js'}"/>
+        <ltng:require scripts="{! $Resource.DataTables + '/Buttons-1.4.2/js/buttons.colVis.js'}"/>
+        <ltng:require scripts="{! $Resource.DataTables + '/Buttons-1.4.2/js/dataTables.buttons.js'}"/>
+
+    </aura:if>
 
     <!-- UI Logic -->
 
@@ -50,8 +53,7 @@
         <div class="seperator"/>
 
         <aura:if isTrue="{!v.displayColumnSelector}">
-            <lightning:checkboxGroup
-                    aura:id="AllColumns"
+            <lightning:checkboxGroup aura:id="AllColumns"
                     name="AllColumns"
                     label=""
                     options="{! v.AllColumns }"
@@ -62,7 +64,7 @@
 
         <aura:if isTrue="{!v.displayLightning}">
             <div class="lightningUIContainer">
-                <lightning:layout>
+                <lightning:layout >
                     <lightning:datatable data="{!v.Contacts}" columns="{!v.Columns}" hideCheckboxColumn="true"
                                          onsort="{!c.sortContacts}" sortedBy="{!v.sortedBy}" sortedDirection="{!v.sortedDirection}"/>
                 </lightning:layout>

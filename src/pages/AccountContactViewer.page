@@ -1,0 +1,21 @@
+<!--
+ - Created by chshah on 12/4/2017.
+ -->
+
+<apex:page standardController="Account">
+    <apex:includeScript value="/lightning/lightning.out.js" />
+    <script>
+        $Lightning.use("c:AccountContactsViewerOutApplication", function() {
+            console.log('here 123');
+            $Lightning.createComponent(
+                    "c:AccountContactsViewer",
+                    { "recordId":"{!Account.Id}"},
+                    "AccountContactViewerDiv",
+                    function(cmp) {
+                        console.log("Component created!");
+                        console.log(cmp);
+                    });
+        });
+    </script>
+    <div id="AccountContactViewerDiv"></div>
+</apex:page>
