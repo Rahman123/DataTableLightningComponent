@@ -4,31 +4,42 @@
 ({
     initialization : function(component, event, helper) {
 
-        component.set("v.version2", '6' );
-
         console.log(" AccountContactsViewerController getContacts for account : " + component.get("v.recordId") + ' initialization ');
 
         var action = component.get("c.getContacts");
-
-        console.log(" AccountContactsViewerController getContacts for account : " + component.get("v.recordId") + ' got action  ');
-
         action.setParams({
             recordId: component.get("v.recordId")
         });
 
+        var configurationAction = component.get("c.getConfiguration");
+
+        /**
         component.set("v.Columns", [
             {label:"First Name", fieldName:"FirstName", type:"text", sortable:true },
             {label:"Last Name", fieldName:"LastName", type:"text" , sortable:true},
             {label:"Phone", fieldName:"Phone", type:"phone" , sortable:true}
         ]);
 
+        component.set("v.AllColumns", [
+            {label:"First Name", value:"FirstName", type:'text', fieldName:"FirstName", sortable:true},
+            {label:"Last Name", value:"LastName", type:'text', fieldName:"LastName", sortable:true},
+            {label:"Phone", value:"Phone", type:'phone', fieldName:"Phone", sortable:true }
+        ]);
+
+        component.set("v.SelectedColumns", [ "FirstName", "LastName", "Phone" ] );
+         **/
+
         console.log(" AccountContactsViewerController getContacts for account : " + component.get("v.recordId") + ' param set  ');
 
         action.setCallback(this, function(data) {
             var state = data.getState();
-            console.log( ' AccountContactsViewerController getContacts callback - state ' + state + ' data: ' + data );
+            console.log( ' AccountContactsViewerController getContacts callback - state ' + state );
+            console.log( data );
             if (state === "SUCCESS") {
+                console.log( data.getReturnValue() );
                 component.set("v.Contacts", data.getReturnValue() );
+                //helper.dataTable(component);
+                //helper.tableSorter(component);
             } else if (state === "INCOMPLETE") {
                 console.log(' AccountContactsViewerController getContacts callback - incomplete ');
             } else if (state === "ERROR") {
@@ -46,9 +57,55 @@
             }
         });
 
+        configurationAction.setCallback(this, function(data) {
+            var state = data.getState();
+            console.log( ' AccountContactsViewerController configurationAction callback - state ' + state );
+            console.log( data );
+            if (state === "SUCCESS") {
+                console.log( data.getReturnValue(). );
+                component.set("v.AllColumns", data.getReturnValue().columns );
+            } else if (state === "ERROR") {
+                component.set("v.displayError", true );
+                var errors = response.getError();
+                if (errors) {
+                    if (errors[0] && errors[0].message) {
+                        component.set("v.errorMessage", errors[0].message );
+                    }
+                } else {
+                    component.set("v.errorMessage", 'Unknown error' );
+                }
+            }
+        });
+
         console.log(" AccountContactsViewerController getContacts for account : " + component.get("v.recordId") + ' server side action is about to be submitted. ');
         $A.enqueueAction(action);
+        $A.enqueueAction(configurationAction);
         console.log(" AccountContactsViewerController getContacts for account : " + component.get("v.recordId") + ' server side action is submitted. ');
+    },
+
+    toggleColumnSelector: function (component, event, helper) {
+        var displayColumnSelector = component.get('v.displayColumnSelector');
+        console.log(' AccountContactsViewerController toggleColumnSelector displayColumnSelector ' + displayColumnSelector );
+        component.set("v.displayColumnSelector", !displayColumnSelector );
+    },
+
+    handleColumnSelection: function (component, event, helper) {
+        var SelectedColumns = component.get('v.SelectedColumns');
+        var AllColumns = component.get('v.AllColumns');
+        var Columns = component.get('v.Columns');
+        var Contacts = component.get("v.Contacts");
+        console.log(' AccountContactsViewerController SelectedColumns PRE: ' + SelectedColumns + ' AllColumns ' + AllColumns + ' Columns ' + Columns );
+        Columns = [];
+        SelectedColumns.forEach(function(selectedColumn) {
+            AllColumns.forEach(function(allColumn) {
+                if( allColumn.value == selectedColumn ) {
+                    Columns.push( allColumn );
+                }
+            });
+        });
+        component.set("v.Columns", Columns);
+        component.set("v.Contacts", Contacts);
+        console.log(' AccountContactsViewerController SelectedColumns POST : ' + SelectedColumns + ' AllColumns ' + AllColumns + ' Columns ' + Columns );
     },
 
     sortContacts: function (component, event, helper) {

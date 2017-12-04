@@ -12,3 +12,15 @@
 .THIS .customUIContainer {
     margin: 10px;
 }
+
+.THIS .slds-form-element__legend  {
+    display: none;
+}
+
+.THIS .seperator {
+    margin-top: 10px;
+}
+
+.THIS .settings {
+    margin-left: 10px;
+}
