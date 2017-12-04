@@ -4,3 +4,11 @@
 .THIS .lightningUIContainer {
     margin-top: 10px;
 }
+
+.THIS .additionalDivider {
+    margin-top: 30px;
+}
+
+.THIS .customUIContainer {
+    margin: 10px;
+}

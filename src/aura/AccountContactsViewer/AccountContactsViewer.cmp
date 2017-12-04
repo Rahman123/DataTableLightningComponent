@@ -11,12 +11,15 @@
     <aura:attribute name="displayLightning" default="true" type="Boolean" description="Display Lightning User Interface Flag"/>
     <aura:attribute name="displayCustom" default="true" type="Boolean" description="Display Custom User Interface Flag"/>
     <aura:attribute name="displayError" default="false" type="Boolean" description="Display Error Message Flag"/>
+    <aura:attribute name="displayBoth" default="true" type="Boolean" description="Display both Lightning and Custom"/>
     <aura:attribute name="errorMessage" default="" type="Boolean" description="Actual Error Message"/>
     <aura:attribute name="recordId" type="Id" description="Record Id of the Page"/>
     <aura:attribute name="Account" type="Account" description="Holds Account value from the Lightning Data Service"/>
     <aura:attribute name="Contacts" type="Contact" description="Holds Contacts from the Server Side controller"/>
     <aura:attribute name="Columns" type="List" default=""  description="holds Column list from Server side controller"/>
-    <aura:attribute name="version1" type="String" default="2"/>
+    <aura:attribute name="sortedBy" type="String" default="" description="holds Column to be sorted by"/>
+    <aura:attribute name="sortedDirection" type="String" default="asc" description="holds Column Sort Direction"/>
+    <aura:attribute name="version1" type="String" default="10"/>
     <aura:attribute name="version2" type="String" default="0"/>
     <aura:attribute name="version3" type="String" default="0"/>
 
@@ -33,14 +36,34 @@
         <aura:if isTrue="{!v.displayLightning}">
             <div class="lightningUIContainer">
                 <lightning:layout>
-                    <lightning:datatable data="{!v.Contacts}" columns="{!v.Columns}" hideCheckboxColumn="true"/>
+                    <lightning:datatable data="{!v.Contacts}" columns="{!v.Columns}" hideCheckboxColumn="true"
+                                         onsort="{!c.sortContacts}" sortedBy="{!v.sortedBy}" sortedDirection="{!v.sortedDirection}"/>
                 </lightning:layout>
             </div>
         </aura:if>
 
+        <aura:if isTrue="{!v.displayBoth}">
+            <div class="additionalDivider"> </div>
+        </aura:if>
+
         <aura:if isTrue="{!v.displayCustom}">
             <div class="customUIContainer">
-
+                <table>
+                    <thead>
+                        <aura:iteration items="{!v.Columns}" var="column">
+                            <th> {!column.label} </th>
+                        </aura:iteration>
+                    </thead>
+                    <tbody>
+                        <aura:iteration items="{!v.Contacts}" var="contact">
+                            <tr>
+                                <aura:iteration items="{!v.Columns}" var="column" indexVar="indexVariable">
+                                    <th> <c:DynamicObjectField Object="{!contact}" Field="{!column.fieldName}"/> </th>
+                                </aura:iteration>
+                            </tr>
+                        </aura:iteration>
+                    </tbody>
+                </table>
             </div>
         </aura:if>
 
@@ -50,11 +73,21 @@
                     Error
                 </div>
                 <div class="errorContainerDetail">
-                        {!v.errorMessage}
+                    {!v.errorMessage}
                 </div>
             </div>
         </aura:if>
 
     </lightning:card>
+
+    <style>
+        .slds-modal__container {
+            max-width: 90% !important;
+            width: 80% !important;
+        }
+        .slds-scrollable_x, .slds-scrollable--x {
+            overflow: hidden !important;
+        }
+    </style>
 
 </aura:component>
